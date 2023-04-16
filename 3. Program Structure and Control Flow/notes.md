@@ -1,4 +1,4 @@
-```
+```python
 for i in s:
     statements
 ```
