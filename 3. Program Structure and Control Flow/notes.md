@@ -16,7 +16,7 @@ s = [(1, 2, 3), (4, 5, 6)]
 for x, y, z in s:
     statements
 ```
-
+Eventhough it is most common to see this used when s is a sequence of tuples, unpacking works when the items in s are any kind of iterable, including lists, generators, and strings.
 > __Note__ 
 > test  
 > 
