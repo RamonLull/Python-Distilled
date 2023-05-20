@@ -9,5 +9,11 @@ for i in range(5):
     pass
 print(i)"""
 
-a, *b = "hjkhjkh"
-print(a)
+"""a, *b = "hjkhjkh"
+print(a)"""
+
+a = [1,2,3]
+b = [1,2,3,4,5,6]
+print(list(zip(a, b)))
+for x, y in zip(a, b):
+    print(x, y)
