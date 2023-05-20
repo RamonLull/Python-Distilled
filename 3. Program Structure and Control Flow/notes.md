@@ -99,7 +99,7 @@ if not some condition:
     statement
 ```
 
-
+**$\color{red}{Python does not provide a "goto" statement}$**.
 
 
 
