@@ -101,6 +101,39 @@ if not some condition:
 
 **$\color{red}{Python\ does\ not\ provide\ a\ "goto"\ statement}$**.
 
+for-else
+```python
+with open('foo.txt') as file:
+    for line in file:
+        stripped = line.strip()
+        if not stripped:
+            break
+        # process the stripped line
+        ...
+    else:
+        raise RuntimeError('Missing section seperator')
+```
+The else clause of a loop executes only if the loop runs to completion. This either occurs immediately (if the loop wouldn't
+execute at all) or after the last iteration. If the loop is terminated early using the break statement, the else clause is skipped.
+
+The same code without else clause
+
+```python
+found_seperator = False
+with open('foo.txt') as file:
+    for line in file:
+        stripped = line.strip()
+        if not stripped:
+            found_seperator = True
+            break
+        # process the stripped line
+        ...
+    if not found_seperator:
+        raise RuntimeError('Missing section seperator')
+```
+
+
+
 
 
 
